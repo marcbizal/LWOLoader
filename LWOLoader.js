@@ -196,13 +196,68 @@
 
 								var offset = 0;
 								while ( view.getInt16( cursor + offset ) !== 0 ) offset++;
-								var name = new TextDecoder().decode(new Uint8Array(data, cursor, offset));
+								var materialName = new TextDecoder().decode(new Uint8Array(data, cursor, offset));
+								var material = new THREE.Material({ name: materialName });
 
 								while (offset < chunkSize) {
+									if ( view.getUint8( cursor+offset ) === 0 ) {
+										offset++;
+									} else {
+										var subchunkType = view.getInt32( cursor + offset );
+										var subchunkSize = view.getInt32( cursor + offset + 4 );
 
+										offset += HEADER_SIZE;
+
+										switch (subchunkType) {
+											case SURF_COLR:
+												console.log("Hello COLR!");
+												break;
+											case SURF_FLAG:
+												break;
+
+											case SURF_LUMI:
+												break;
+											case SURF_DIFF:
+												break;
+											case SURF_SPEC:
+												break;
+											case SURF_REFL:
+												break;
+											case SURF_TRAN:
+												break;
+
+											case SURF_VLUM:
+												break;
+											case SURF_VDIF:
+												break;
+											case SURF_VSPC:
+												break;
+											case SURF_VRFL:
+												break;
+											case SURF_VTRN:
+												break;
+
+											case SURF_GLOS:
+												break;
+											case SURF_RFLT:
+												break;
+											case SURF_RIMG:
+												break;
+											case SURF_RIND:
+												break;
+											case SURF_EDGE:
+												break;
+											case SURF_SMAN:
+												break;
+											default:
+											console.warn('Found unrecognised subchunk type ' + new TextDecoder().decode(new Uint8Array(data, cursor+offset-HEADER_SIZE, 4)) + ' at ' + cursor + offset);
+										}
+
+										offset += subchunkSize;
+									}
 								}
 
-								console.log('Surface name: ' + name);
+								console.log('Surface name: ' + materialName);
 
 
 								break;
