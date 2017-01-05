@@ -86,21 +86,17 @@
 
 				// CHUNK TYPES //
 
-				const LWO_LAYR = 0x4C415952;
 				const LWO_PNTS = 0x504E5453;
-				const LWO_VMAP = 0x564D4150;
+				const LWO_SFRS = 0x53524653;
 				const LWO_POLS = 0x504F4C53;
-				const LWO_TAGS = 0x54414753;
-				const LWO_PTAG = 0x50544147;
-				const LWO_VMAD = 0x564D4144;
-				const LWO_VMPA = 0x564D5041;
-				const LWO_ENVL = 0x454E564C;
-				const LWO_CLIP = 0x434C4950;
+				const LWO_CRVS = 0x43525653;
+				const LWO_PCHS = 0x50434853;
 				const LWO_SURF = 0x53555246;
-				const LWO_BBOX = 0x42424F58;
-				const LWO_DESC = 0x44455343;
-				const LWO_TEXT = 0x54455854;
-				const LWO_ICON = 0x49434F4E;
+
+				const HEADER_SIZE = 8;
+
+				var geometry = new THREE.BufferGeometry();
+				var vertices = null;
 
 				var cursor = 12;
 				while (cursor < view.byteLength) {
@@ -109,14 +105,109 @@
 						cursor++;
 					} else {
 						var chunkType = view.getInt32( cursor );
-						var chunkSize = view.getInt32( cursor + 4 ) + 8;
+						var chunkSize = view.getInt32( cursor + 4 );
+
+						cursor += HEADER_SIZE;
 
 						switch(chunkType) {
 							case LWO_PNTS:
-								console.log('Found PNTS chunk at ' + cursor);
+								if ( chunkSize % 12 !== 0 ) {
+									console.error( 'THREE.LWO2Loader.parse: F12 does not evenly divide into chunk size ('+chunkSize+'). Possible corruption.' );
+									return;
+								}
+
+								var numPoints = chunkSize / 4;
+								var points = new Float32Array( numPoints );
+
+								for ( var i = 0; i < numPoints; i++ ) {
+									points[i] = view.getFloat32( cursor + (i * 4) );
+								}
+
+								var geometry = new THREE.BufferGeometry();
+								geometry.addAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
+
+								console.dir(geometry);
+								console.dir(points);
+
+								break;
+							case LWO_SFRS:
+								var textChunk = new TextDecoder().decode(new Uint8Array(data, cursor, chunkSize));
+								var surfaceNames = textChunk.split('\0').filter(function(s) { return s != ''; });
+
+								console.log(surfaceNames);
+
+								break;
+							case LWO_POLS:
+								var offset = 0;
+								while (offset < chunkSize) {
+									var numVert = view.getInt16( cursor + offset );
+									var indices = new Int16Array(numVert);
+
+									for (var i = 0; i <= numVert; i++) {
+										indices[i] = view.getInt16( cursor + offset + (i*2) );
+									}			
+
+									var triFanIndices = [];
+									for (var i = 0; i < numVert-2; i++) {
+										triFanIndices.push(indices[0]);
+										triFanIndices.push(indices[i+1]);
+										triFanIndices.push(indices[i+2]);
+									}
+
+									console.log(triFanIndices);
+									console.log(indices);
+
+									offset += 4 + (numVert * 2);		
+								}
+								break;
+							case LWO_SURF:
+
+								/**************************/
+								/* SURF DEFINITIONS START */
+								/**************************/
+
+								const SURF_COLR = 0x434F4C52;
+								const SURF_FLAG = 0x464C4147;
+
+								// Base Shading Values (Fixed Point)
+								const SURF_LUMI = 0x4C554D49;
+								const SURF_DIFF = 0x44494646;
+								const SURF_SPEC = 0x53504543;
+								const SURF_REFL = 0x5245464C;
+								const SURF_TRAN = 0x5452414E;
+
+								// Base Shading Values (Floating Point)
+								const SURF_VLUM = 0x564C554D;
+								const SURF_VDIF = 0x56444946;
+								const SURF_VSPC = 0x56535043;
+								const SURF_VRFL = 0x5646524C;
+								const SURF_VTRN = 0x5654524E;
+
+								const SURF_GLOS = 0x474C4F53;
+								const SURF_RFLT = 0x52464C54;
+								const SURF_RIMG = 0x52494D47;
+								const SURF_RIND = 0x52494E44;
+								const SURF_EDGE = 0x45444745;
+								const SURF_SMAN = 0x534D414E;
+
+								/**************************/
+								/*  SURF DEFINITIONS END  */
+								/**************************/
+
+								var offset = 0;
+								while ( view.getInt16( cursor + offset ) !== 0 ) offset++;
+								var name = new TextDecoder().decode(new Uint8Array(data, cursor, offset));
+
+								while (offset < chunkSize) {
+
+								}
+
+								console.log('Surface name: ' + name);
+
+
 								break;
 							default:
-							console.log('Found ' + new TextDecoder().decode(new Uint8Array(data, cursor, 4)) + ' chunk at ' + cursor);
+							console.warn('Found unrecognised chunk type ' + new TextDecoder().decode(new Uint8Array(data, cursor-8, 4)) + ' at ' + cursor);
 						}
 
 						cursor += chunkSize;

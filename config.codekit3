@@ -36195,7 +36195,7 @@
 			"optionString": "{'skipBlankLines': false}"
 			},
 		"no-undef": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
@@ -36243,7 +36243,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none'}"
 			},
 		"no-use-before-define": {
