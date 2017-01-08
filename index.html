@@ -36,15 +36,15 @@
 		var render = function () {
 			requestAnimationFrame( render );
 
-			// lwo.rotation.x += 0.01;
-			// lwo.rotation.y += 0.01;
+			lwo.rotation.x += 0.01;
+			lwo.rotation.y += 0.01;
 
 			renderer.render(scene, camera);
 		};
 
 		var loader = new THREE.LWOLoader();
 
-		loader.load("/LegoRR0/Buildings/Teleports/Base.lwo", function(lwo_) {
+		loader.load("/LegoRR0/Buildings/Teleports/Mobile-teleport.lwo", function(lwo_) {
 
 			lwo = new THREE.Group();
 			lwo.add(lwo_);

@@ -361,7 +361,7 @@
 									console.log(flags & mask);
 									if (flags & mask) {
 										for (var group of geometry.groups) {
-											if (group.materialIndex == materialIndex) continue;
+											if (group.materialIndex != materialIndex) continue;
 
 											for (let i = group.start; i < group.start+group.count; i++) {
 
@@ -375,15 +375,12 @@
 												let v = 0;
 
 												if (flags & XAXIS_BIT) {
-													console.log("X");
-													u = -z/size.z + 0.5;
+													u = z/size.z + 0.5;
 													v = y/size.y + 0.5;
 												} else if (flags & YAXIS_BIT) {
-													console.log("Y");
 													u = x/size.x + 0.5;
-													v = -z/size.z + 0.5;
+													v = z/size.z + 0.5;
 												} else if (flags & ZAXIS_BIT) {
-													console.log("Z");
 													u = x/size.x + 0.5;
 													v = y/size.y + 0.5;
 												}
@@ -393,7 +390,7 @@
 											}
 										}
 									} else {
-										console.warn("THREE.LWO2Loader.planarMapUVS: No axis bit is set...");
+										console.warn("THREE.LWO2Loader.planarMapUVS: No axis bit is set!");
 										return;
 									}
 
