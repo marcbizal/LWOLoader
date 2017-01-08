@@ -75,6 +75,8 @@
 
 				}
 
+				const COUNTER_CLOCKWISE = false;
+
 				// TYPE SIZES IN BYTES
 				// NOTE: These are only for the sake of code clarity
 				const ID4_SIZE 		= 4;
@@ -149,12 +151,16 @@
 									return;
 								}
 
-								var numVertices = chunkSize / F4_SIZE;
-								this.vertices = new Float32Array( numVertices );
-								this.uvs      = new Float32Array( (numVertices / 3) * 2 );
+								var numVertices = (chunkSize / F4_SIZE) / 3;
+								this.vertices = new Float32Array( numVertices * 3 );
+								this.uvs      = new Float32Array( numVertices * 2 );
 
 								for ( var i = 0; i < numVertices; i++ ) {
-									this.vertices[i] = view.getFloat32( cursor + (i * F4_SIZE) );
+									var vertexIndex = (i * 3);
+									var vertexOffset = vertexIndex * F4_SIZE;
+									this.vertices[vertexIndex] = view.getFloat32( cursor + vertexOffset ); 					// x
+									this.vertices[vertexIndex+1] = view.getFloat32( cursor + vertexOffset + F4_SIZE ); 		// y
+									this.vertices[vertexIndex+2] = view.getFloat32( cursor + vertexOffset + (F4_SIZE*2)); 	// z
 								}
 
 								break;
@@ -199,9 +205,15 @@
 									}
 
 									for (var i = 0; i < numIndices-2; i++) {
-										this.indices[currentIndex++] = faceIndices[0];
-										this.indices[currentIndex++] = faceIndices[i+1];
-										this.indices[currentIndex++] = faceIndices[i+2];
+										if (COUNTER_CLOCKWISE) {
+											this.indices[currentIndex++] = faceIndices[0];
+											this.indices[currentIndex++] = faceIndices[i+2];
+											this.indices[currentIndex++] = faceIndices[i+1];
+										} else {
+											this.indices[currentIndex++] = faceIndices[0];
+											this.indices[currentIndex++] = faceIndices[i+1];
+											this.indices[currentIndex++] = faceIndices[i+2];
+										}
 
 										// NOTE: 	This could work if we were using a standard Geometry rather than BufferGeometry.
 										// 			Although BufferGeometry takes a bit of extra time to parse, it is more efficient to render.
@@ -341,6 +353,9 @@
 
 								function planarMapUVS(geometry, vertices, uvs, indices, materialIndex, size, center, flags) {
 
+									console.log(flags.toString(2))
+									console.log(size);
+									console.log(center);
 									// Check to ensure that one of the flags is set, if not throw an error.
 									var mask = XAXIS_BIT | YAXIS_BIT | ZAXIS_BIT;
 									console.log(flags & mask);
@@ -359,13 +374,16 @@
 												let u = 0;
 												let v = 0;
 
-												if (flags & YAXIS_BIT) {
-													u = y/size.y + 0.5;
-													v = z/size.z + 0.5;
-												} else if (flags & ZAXIS_BIT) {
+												if (flags & XAXIS_BIT) {
+													console.log("X");
+													u = -z/size.z + 0.5;
+													v = y/size.y + 0.5;
+												} else if (flags & YAXIS_BIT) {
+													console.log("Y");
 													u = x/size.x + 0.5;
-													v = z/size.z + 0.5;
-												} else if (flags & XAXIS_BIT) {
+													v = -z/size.z + 0.5;
+												} else if (flags & ZAXIS_BIT) {
+													console.log("Z");
 													u = x/size.x + 0.5;
 													v = y/size.y + 0.5;
 												}

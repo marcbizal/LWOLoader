@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="LWOLoader.js"></script>
 
 	<style>
-		body { margin: 0; }
+		html, body { margin: 0; padding: 0; overflow: hidden; }
 		canvas { width: 100%; height: 100% }
 	</style>
 </head>
@@ -36,8 +36,8 @@
 		var render = function () {
 			requestAnimationFrame( render );
 
-			lwo.rotation.x += 0.01;
-			lwo.rotation.y += 0.01;
+			// lwo.rotation.x += 0.01;
+			// lwo.rotation.y += 0.01;
 
 			renderer.render(scene, camera);
 		};
@@ -51,6 +51,9 @@
 
 			var axisHelper = new THREE.AxisHelper( 20 );
 			lwo.add(axisHelper);
+
+			lwo.rotation.x += 0.5;
+			lwo.rotation.y += 0.5;
 
 			scene.add( lwo );
 			render();

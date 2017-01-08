@@ -17,9 +17,9 @@
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/index.html",
-		"oF": 1
+		"oF": 0
 		},
 	"\/LegoRR0\/Buildings\/Barracks\/A000_ladder.BMP": {
 		"ft": 8192,
@@ -33809,1295 +33809,1295 @@
 		},
 	"\/LegoRR1\/credits.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/credits.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Languages\/ObjectiveText.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Languages\/ObjectiveText.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Lego.cfg": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Lego.cfg",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level01\/01.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level01\/01.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level02\/02.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level02\/02.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level03\/03.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level03\/03.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level04\/04.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level04\/04.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level05\/05.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level05\/05.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level06\/06.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level06\/06.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level07\/07.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level07\/07.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level08\/08.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level08\/08.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level09\/09.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level09\/09.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level10\/10.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level10\/10.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level11\/11.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level11\/11.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level12\/12.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level12\/12.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level13\/13.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level13\/13.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level14\/14.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level14\/14.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level15\/15.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level15\/15.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level16\/16.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level16\/16.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level17\/17.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level17\/17.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level18\/18.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level18\/18.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level19\/19.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level19\/19.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level20\/20.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level20\/20.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level21\/21.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level21\/21.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level22\/22.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level22\/22.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level23\/23.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level23\/23.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level24\/24.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level24\/24.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/GameLevels\/Level25\/25.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/GameLevels\/Level25\/25.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/BuildTuto_01\/B01.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/BuildTuto_01\/B01.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/BuildTuto_02\/B02.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/BuildTuto_02\/B02.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/DefenceTuto_01\/DE1.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/DefenceTuto_01\/DE1.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_01\/D01.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_01\/D01.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_02\/D02.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_02\/D02.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_03\/D03.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/DigTuto_03\/D03.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/MoveTuto_01\/M01.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/MoveTuto_01\/M01.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Levels\/TutorialLevels\/MoveTuto_02\/M02.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Levels\/TutorialLevels\/MoveTuto_02\/M02.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/docks2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/docks2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/geolcentre2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/geolcentre2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/mininglaser2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/mininglaser2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/orerefine2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/orerefine2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/pwrstation2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/pwrstation2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/supertele2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/supertele2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/supstation2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/supstation2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/telepad2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/telepad2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/toolstore2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/toolstore2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/BuildingNames\/upgrstation2.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/BuildingNames\/upgrstation2.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/icemon.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/icemon.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Lavamon.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Lavamon.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Rockmon.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Rockmon.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Rockraider.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Rockraider.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/slimyslug.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/slimyslug.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Smspider.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/CharacterNames\/Smspider.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/inf04.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/inf04.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/inf08.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/inf08.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/inf14.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/inf14.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/inf28.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/inf28.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/inf30.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/inf30.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/misc03.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/misc03.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/monapp.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/monapp.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/Msg37.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/Msg37.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/Msg43.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/Msg43.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/msg54.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/msg54.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/msg58.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/msg58.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Info\/msg59.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Info\/msg59.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface02.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface02.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface03.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface03.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface04.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface04.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface06.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface06.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface08.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface08.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface10.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface10.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface100.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface100.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface101.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface101.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface102.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface102.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface103.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface103.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface104.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface104.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface105.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface105.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface106.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface106.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface107.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface107.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface108.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface108.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface109.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface109.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface11.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface11.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface114.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface114.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface115.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface115.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface116.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface116.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface117.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface117.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface118.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface118.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface119.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface119.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface120.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface120.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface121.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface121.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface122.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface122.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface123.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface123.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface139.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface139.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface14.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface14.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface140.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface140.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface15.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface15.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface160.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface160.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface161.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface161.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface18.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface18.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface24.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface24.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface25.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface25.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface26.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface26.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface27.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface27.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface28.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface28.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface29.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface29.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface30.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface30.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface31.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface31.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface32.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface32.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface33.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface33.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface34.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface34.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface35.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface35.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface36.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface36.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface37.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface37.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface38.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface38.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface39.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface39.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface40.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface40.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface43.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface43.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface44.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface44.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface45.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface45.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface46.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface46.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface51.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface51.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface53.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface53.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface54.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface54.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface55.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface55.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface56.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface56.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface57.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface57.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface58.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface58.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface59.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface59.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface63.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface63.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface64.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface64.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface66.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface66.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface67.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface67.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface68.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface68.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface70.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface70.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface71.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface71.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface72.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface72.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface74.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface74.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface76.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface76.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface78.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface78.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/Interface79.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/Interface79.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface80.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface80.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface81.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface81.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface82.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface82.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface83.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface83.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface84.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface84.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface85.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface85.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface86.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface86.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface87.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface87.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface88.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface88.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface89.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface89.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface90.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface90.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface91.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface91.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface92.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface92.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface93.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface93.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface94.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface94.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface95.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface95.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface96.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface96.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface97.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface97.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface98.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface98.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/interface99.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/interface99.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/nofeed.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/nofeed.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Interface\/nouprr.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Interface\/nouprr.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ObjectNames\/engycrys.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ObjectNames\/engycrys.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ObjectNames\/ore.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ObjectNames\/ore.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ObjectNames\/stud.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ObjectNames\/stud.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/drilling.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/drilling.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio01.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio01.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio02.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio02.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio03.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio03.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio04.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio04.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio07.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio07.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio08.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio08.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio11.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Priorities\/Prio11.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/building.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/building.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/cavfloor.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/cavfloor.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/dirt.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/dirt.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/encryseam.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/encryseam.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/hardrock.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/hardrock.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/looserock.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/looserock.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/msg16.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/msg16.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/Msg17.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/Msg17.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/oreseam.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/oreseam.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/path.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/path.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/recharge.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/recharge.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/Reinf.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/Reinf.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/rubble.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/rubble.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/slughole.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/slughole.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/solidrock.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/solidrock.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/Surfaces\/undicav.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/Surfaces\/undicav.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/back.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/back.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/options.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/options.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/Prio12.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/Prio12.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip01.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip01.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip02.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip02.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip03.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip03.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip04.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip04.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip06.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip06.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip07.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip07.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip08.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip08.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip09.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip09.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip10.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip10.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip11.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip11.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip12.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/ToolTips\/tip12.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/catermaran.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/catermaran.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/chromecrush.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/chromecrush.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Ggrinder.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Ggrinder.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/hoverscout.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/hoverscout.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Largecutter.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Largecutter.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Ldozer.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Ldozer.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Rapidrider.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Rapidrider.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/smallcutter.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/smallcutter.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/smalldigger.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/smalldigger.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Smalltransporttruck.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/Smalltransporttruck.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/tunnelscout.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/tunnelscout.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LegoRR1\/Sounds\/Voices\/VehicleNames\/tuntrans.wav": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/LegoRR1\/Sounds\/Voices\/VehicleNames\/tuntrans.wav",
-		"oF": 0
+		"oF": 1
 		},
 	"\/LWOLoader.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/LWOLoader.min.js",
-		"oF": 3,
-		"sC": 3,
+		"oAP": "\/LWOLoader-min.js",
+		"oF": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"\/LWOLoader.min.js": {
