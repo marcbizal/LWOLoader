@@ -28,21 +28,13 @@
 		scene.add( light );
 
 		var light = new THREE.PointLight( 0xff0000, 1, 100 );
-		light.position.set( 50, 50, 50 );
+		light.position.set( 20, 20, 20 );
 		scene.add( light );
-
-		var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-		var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-		var cube = new THREE.Mesh( geometry, material );
-		scene.add( cube );
 
 		camera.position.z = 50;
 
 		var render = function () {
 			requestAnimationFrame( render );
-
-			cube.rotation.x += 0.01;
-			cube.rotation.y += 0.01;
 
 			lwo.rotation.x += 0.01;
 			lwo.rotation.y += 0.01;
@@ -52,9 +44,15 @@
 
 		var loader = new THREE.LWOLoader();
 
-		loader.load("/LegoRR0/Buildings/Teleports/Mobile-teleport.lwo", function(lwo_) {
-			lwo = lwo_;
-			scene.add( lwo_ );
+		loader.load("/LegoRR0/Buildings/Teleports/Base.lwo", function(lwo_) {
+
+			lwo = new THREE.Group();
+			lwo.add(lwo_);
+
+			var axisHelper = new THREE.AxisHelper( 20 );
+			lwo.add(axisHelper);
+
+			scene.add( lwo );
 			render();
 		});
 	</script>

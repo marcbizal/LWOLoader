@@ -12,8 +12,12 @@
 		THREE.LWOLoader = function( manager ) {
 
 			this.manager = ( manager !== undefined ) ? manager : THREE.DefaultLoadingManager;
-			this.materials = [];
+			this.path = "";
+			this.materials = new Array();
 			this.geometry = new THREE.BufferGeometry();
+			this.vertices = null;
+			this.indices = null;
+			this.uvs = null;
 
 		};
 
@@ -22,6 +26,7 @@
 			constructor: THREE.LWO2Loader,
 
 			load: function( url, onLoad, onProgress, onError ) {
+				this.path = url.replace(/\//g, "\\"); // convert forward slashes to backslashes.
 
 				var scope = this;
 
@@ -37,6 +42,18 @@
 
 			parse: function( buffer ) {
 				var view = new DataView(buffer);
+
+				function decimalToBinary(dec){
+				    return (dec >>> 0).toString(2);
+				}
+
+				function getFilename( path ) {
+					return path.substring(path.lastIndexOf('\\')+1);
+				}
+
+				function getFilepath( path ) {
+					return path.substring(0, path.lastIndexOf('\\')+1);
+				}
 
 				function fourCCToInt32( value ) {
 
@@ -121,30 +138,24 @@
 						cursor++;
 					} else {
 						var chunkType = view.getInt32( cursor );
-						var chunkSize = view.getInt32( cursor + 4 );
+						var chunkSize = view.getInt32( cursor + ID4_SIZE );
 
 						cursor += CHUNK_HEADER_SIZE;
 
 						switch(chunkType) {
 							case LWO_PNTS:
-								if ( chunkSize % 12 !== 0 ) {
+								if ( chunkSize % VEC12_SIZE !== 0 ) {
 									console.error( 'THREE.LWO2Loader.parse: F12 does not evenly divide into chunk size ('+chunkSize+'). Possible corruption.' );
 									return;
 								}
 
-								var numPoints = chunkSize / 4;
-								var points = new Float32Array( numPoints );
+								var numVertices = chunkSize / F4_SIZE;
+								this.vertices = new Float32Array( numVertices );
+								this.uvs      = new Float32Array( (numVertices / 3) * 2 );
 
-								for ( var i = 0; i < numPoints; i++ ) {
-									points[i] = view.getFloat32( cursor + (i * 4) );
+								for ( var i = 0; i < numVertices; i++ ) {
+									this.vertices[i] = view.getFloat32( cursor + (i * F4_SIZE) );
 								}
-
-								this.geometry.addAttribute( 'position', new THREE.BufferAttribute( points, 3 ) );
-
-								//var _geometry = new THREE.Geometry().fromBufferGeometry( this.geometry );
-								//console.log(geometry);
-								this.geometry.clearGroups();
-								console.log(points);
 
 								break;
 							case LWO_SFRS:
@@ -153,7 +164,8 @@
 
 								for (i = 0; i < surfaceNames.length; i++) { 
 									var new_material = new THREE.MeshBasicMaterial();
-									new_material.name = surfaceNames[i];
+										new_material.name = surfaceNames[i];
+
 									this.materials.push(new_material);
 								}
 
@@ -175,12 +187,9 @@
 
 								offset = 0;
 								var currentIndex = 0;
-								var allIndices = new Uint16Array(totalNumIndices);
+								this.indices = new Uint16Array(totalNumIndices);
 								while (offset < chunkSize) {
 									var numIndices = view.getInt16( cursor + offset );
-
-									console.log(numIndices)
-									console.log( cursor + offset )
 
 									offset += 2;
 
@@ -189,12 +198,10 @@
 										faceIndices[i] = view.getInt16( cursor + offset + (i*2) );
 									}
 
-									console.log(faceIndices);
-
 									for (var i = 0; i < numIndices-2; i++) {
-										allIndices[currentIndex++] = faceIndices[0];
-										allIndices[currentIndex++] = faceIndices[i+1];
-										allIndices[currentIndex++] = faceIndices[i+2];
+										this.indices[currentIndex++] = faceIndices[0];
+										this.indices[currentIndex++] = faceIndices[i+1];
+										this.indices[currentIndex++] = faceIndices[i+2];
 
 										// NOTE: 	This could work if we were using a standard Geometry rather than BufferGeometry.
 										// 			Although BufferGeometry takes a bit of extra time to parse, it is more efficient to render.
@@ -207,9 +214,6 @@
 									offset += 2 + (numIndices * 2);		
 								}
 
-								console.log(allIndices);
-
-								this.geometry.setIndex(new THREE.BufferAttribute(allIndices, 1));
 								break;
 							case LWO_SURF:
 
@@ -295,13 +299,104 @@
 								/*  TEXTURE DEFINITIONS END  */
 								/*****************************/
 
+								/*************************/
+								/* FLAG DEFINITION START */
+								/*************************/
+
+								const LUMINOUS_BIT 			= 1;
+								const OUTLINE_BIT 			= 2;
+								const SMOOTHING_BIT 		= 4;
+								const COLORHIGHLIGHTS_BIT 	= 8;
+								const COLORFILTER_BIT		= 16;
+								const OPAQUEEDGE_BIT		= 32;
+								const TRANSPARENTEDGE_BIT	= 64;
+								const SHARPTERMINATOR_BIT	= 128;
+								const DOUBLESIDED_BIT		= 256;
+								const ADDITIVE_BIT			= 512;
+								const SHADOWALPHA_BIT		= 1024;
+
+								/*************************/
+								/*  FLAG DEFINITION END  */
+								/*************************/
+
+								/*************************/
+								/* TFLG DEFINITION START */
+								/*************************/
+
+								const XAXIS_BIT 			= 1;
+								const YAXIS_BIT 			= 2;
+								const ZAXIS_BIT 			= 4;
+								const WORLDCOORDS_BIT 		= 8;
+								const NEGATIVEIMAGE_BIT		= 16;
+								const PIXELBLENDING_BIT		= 32;
+								const ANTIALIASING_BIT		= 64;
+
+								/*************************/
+								/*  TFLG DEFINITION END  */
+								/*************************/
+
+								function getVector3AtIndex(vertices, index) {
+									return THREE.Vector3( vertices[vertexIndex], vertices[vertexIndex]+1, vertices[vertexIndex]+2 );
+								}
+
+								function planarMapUVS(geometry, vertices, uvs, indices, materialIndex, size, center, flags) {
+
+									// Check to ensure that one of the flags is set, if not throw an error.
+									var mask = XAXIS_BIT | YAXIS_BIT | ZAXIS_BIT;
+									console.log(flags & mask);
+									if (flags & mask) {
+										for (var group of geometry.groups) {
+											if (group.materialIndex == materialIndex) continue;
+
+											for (let i = group.start; i < group.start+group.count; i++) {
+
+												let vertexIndex = indices[i] * 3;
+												let x = vertices[vertexIndex] 	- center.x;
+												let y = vertices[vertexIndex+1] - center.y;
+												let z = vertices[vertexIndex+2] - center.z;
+
+												let uvIndex = indices[i] * 2;
+												let u = 0;
+												let v = 0;
+
+												if (flags & YAXIS_BIT) {
+													u = y/size.y + 0.5;
+													v = z/size.z + 0.5;
+												} else if (flags & ZAXIS_BIT) {
+													u = x/size.x + 0.5;
+													v = z/size.z + 0.5;
+												} else if (flags & XAXIS_BIT) {
+													u = x/size.x + 0.5;
+													v = y/size.y + 0.5;
+												}
+
+												uvs[uvIndex] = u;
+												uvs[uvIndex+1] = v;
+											}
+										}
+									} else {
+										console.warn("THREE.LWO2Loader.planarMapUVS: No axis bit is set...");
+										return;
+									}
+
+								}
+
 								var offset = 0;
 								while ( view.getUint8( cursor + offset ) !== 0 ) offset++;
 								var materialName = new TextDecoder().decode(new Uint8Array(buffer, cursor, offset));
+								var materialIndex = -1;
 								var material = null;
+								var textureFlags = 0;
+								var textureSize = new THREE.Vector3( 0, 0, 0 );
+								var textureCenter = new THREE.Vector3( 0, 0, 0 );
+								var textureFalloff = new THREE.Vector3( 0, 0, 0 );
+								var textureVelocity = new THREE.Vector3( 0, 0, 0 );
 
-								for (var m of this.materials) {
-									if (m.name == materialName) material = m;
+								for (i = 0; i < this.materials.length; i++) { 
+									if (this.materials[i].name == materialName) {
+										materialIndex = i;
+										material = this.materials[i];
+									}
 								}
 
 								if (!material) {
@@ -317,18 +412,14 @@
 										offset++;
 									} else {
 										var subchunkType = view.getInt32( subchunkOffset );
-										var subchunkSize = view.getInt32( subchunkOffset + 4 );
-
-										offset += SUBCHUNK_HEADER_SIZE;
+										var subchunkSize = view.getInt16( subchunkOffset + ID4_SIZE );
 
 										switch (subchunkType) {
 											case SURF_COLR:
 												var colorArray = [];
 												for (var i = 0; i < 4; i++) {
-													colorArray.push(view.getUint8(subchunkOffset+6+i) / 255);
+													colorArray.push(view.getUint8(subchunkOffset+SUBCHUNK_HEADER_SIZE+i) / 255);
 												}
-												console.log(new TextDecoder().decode(new Uint8Array(buffer, subchunkOffset+6, 6)));
-												console.log(colorArray)
 
 												var color_ = new THREE.Color().fromArray(colorArray);
 
@@ -336,6 +427,8 @@
 
 												break;
 											case SURF_FLAG:
+												var binaryString = view.getUint16(subchunkOffset+SUBCHUNK_HEADER_SIZE);
+												// console.log(binaryString);
 												break;
 
 											case SURF_LUMI:
@@ -382,23 +475,73 @@
 												break;
 											case SURF_SMAN:
 												break;
+											case SURF_TFLG:
+												textureFlags = view.getUint16(subchunkOffset+SUBCHUNK_HEADER_SIZE);
+												break;
+											case SURF_TSIZ:
+												textureSize.x = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE );
+												textureSize.y = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE + F4_SIZE );
+												textureSize.z = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE + (F4_SIZE * 2) );												break;
+											case SURF_TCTR:
+												textureCenter.x = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE );
+												textureCenter.y = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE + F4_SIZE );
+												textureCenter.z = view.getFloat32( subchunkOffset + SUBCHUNK_HEADER_SIZE + (F4_SIZE * 2) );
+												break;
+											case SURF_TIMG:
+												var texturePath = new TextDecoder().decode(new Uint8Array(buffer, subchunkOffset+SUBCHUNK_HEADER_SIZE, subchunkSize));
+												var textureName = getFilename(texturePath);
+												var currentPath = getFilepath(this.path);
+
+												// instantiate a loader
+												var loader = new THREE.TextureLoader();
+												material.map = loader.load( "LegoRR0/World/Shared/" + textureName );
+												material.map.wrapS = THREE.RepeatWrapping;
+												material.map.wrapT = THREE.RepeatWrapping;
+												//material.map.repeat.set( 4, 4 );
+												var scope = this;
+
+												// load a resource
+												/*
+												loader.load(
+													"LegoRR0/World/Shared/" + textureName,
+													function ( texture ) {
+														scope.materials[materialIndex].map = texture;
+													},
+													// Function called when download progresses
+													function ( xhr ) {
+														console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+													},
+													// Function called when download errors
+													function ( xhr ) {
+														console.log( 'An error happened' );
+													}
+												);
+												*/
+
+												break;
 											default:
-											console.warn('Found unrecognised subchunk type ' + new TextDecoder().decode(new Uint8Array(buffer, subchunkOffset-SUBCHUNK_HEADER_SIZE, 4)) + ' at ' + subchunkOffset);
+											console.warn('Found unrecognised SURF subchunk type ' + new TextDecoder().decode(new Uint8Array(buffer, subchunkOffset, ID4_SIZE)) + ' at ' + subchunkOffset);
 										}
 
-										offset += subchunkSize;
+										offset += SUBCHUNK_HEADER_SIZE + subchunkSize;
 									}
 								}
 
+								planarMapUVS(this.geometry, this.vertices, this.uvs, this.indices, materialIndex, textureSize, textureCenter, textureFlags);
+								console.log(this.uvs)
 								break;
 							default:
-							console.warn('Found unrecognised chunk type ' + new TextDecoder().decode(new Uint8Array(buffer, cursor-8, 4)) + ' at ' + cursor);
+							console.warn('Found unrecognised chunk type ' + new TextDecoder().decode(new Uint8Array(buffer, cursor-CHUNK_HEADER_SIZE, ID4_SIZE)) + ' at ' + cursor);
 						}
 
 						cursor += chunkSize;
 					}
 
 				}
+
+				this.geometry.addAttribute( 'position', new THREE.BufferAttribute( this.vertices, 3 ) );
+				this.geometry.addAttribute( 'uv', new THREE.BufferAttribute( this.uvs, 2 ) );
+				this.geometry.setIndex( new THREE.BufferAttribute( this.indices, 1 ) );
 
 				return new THREE.Mesh(this.geometry, new THREE.MultiMaterial( this.materials ));
 			}
