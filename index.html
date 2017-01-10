@@ -24,10 +24,10 @@
 
 		var lwo = null;
 
-		var light = new THREE.AmbientLight( 0x404040 ); // soft white light
-		scene.add( light );
+		var amb = new THREE.AmbientLight( 0x808080 ); // soft white light
+		scene.add( amb );
 
-		var light = new THREE.PointLight( 0xff0000, 1, 100 );
+		var light = new THREE.PointLight( 0xffffff, 1, 1000 );
 		light.position.set( 20, 20, 20 );
 		scene.add( light );
 
@@ -36,7 +36,7 @@
 		var render = function () {
 			requestAnimationFrame( render );
 
-			lwo.rotation.x += 0.01;
+			//lwo.rotation.x += 0.01;
 			lwo.rotation.y += 0.01;
 
 			renderer.render(scene, camera);

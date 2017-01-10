@@ -15,6 +15,21 @@
 		"oAP": "\/.gitignore",
 		"oF": 1
 		},
+	"\/BitmapLoader.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/BitmapLoader-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/BitmapTest.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/BitmapTest.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -31165,6 +31180,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LegoRR0\/World\/Shared\/HandLaser.LWO",
+		"oF": 0
+		},
+	"\/LegoRR0\/World\/Shared\/HanTop.bmp": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LegoRR0\/World\/Shared\/HanTop.bmp",
 		"oF": 0
 		},
 	"\/LegoRR0\/World\/Shared\/Headside.bmp": {

@@ -169,7 +169,7 @@
 								var surfaceNames = textChunk.split('\0').filter(function(s) { return s != ''; });
 
 								for (i = 0; i < surfaceNames.length; i++) { 
-									var new_material = new THREE.MeshBasicMaterial();
+									var new_material = new THREE.MeshPhongMaterial();
 										new_material.name = surfaceNames[i];
 
 									this.materials.push(new_material);
@@ -352,13 +352,8 @@
 								}
 
 								function planarMapUVS(geometry, vertices, uvs, indices, materialIndex, size, center, flags) {
-
-									console.log(flags.toString(2))
-									console.log(size);
-									console.log(center);
 									// Check to ensure that one of the flags is set, if not throw an error.
 									var mask = XAXIS_BIT | YAXIS_BIT | ZAXIS_BIT;
-									console.log(flags & mask);
 									if (flags & mask) {
 										for (var group of geometry.groups) {
 											if (group.materialIndex != materialIndex) continue;
@@ -442,40 +437,47 @@
 
 												break;
 											case SURF_FLAG:
-												var binaryString = view.getUint16(subchunkOffset+SUBCHUNK_HEADER_SIZE);
-												// console.log(binaryString);
+												var flags = view.getUint16(subchunkOffset+SUBCHUNK_HEADER_SIZE);
 												break;
 
 											case SURF_LUMI:
-												var luminosity = view.getInt16(subchunkOffset) / 255;
+												var luminosity = view.getInt16(subchunkOffset+SUBCHUNK_HEADER_SIZE) / 255;
 												break;
 											case SURF_DIFF:
-												var diffuse = view.getInt16(subchunkOffset) / 255;
+												var diffuse = view.getInt16(subchunkOffset+SUBCHUNK_HEADER_SIZE) / 255;
 												break;
 											case SURF_SPEC:
-												var specular = view.getInt16(subchunkOffset) / 255;
+												var specular = view.getInt16(subchunkOffset+SUBCHUNK_HEADER_SIZE) / 255;
+												material.specular = material.color.multiplyScalar(specular);
 												break;
 											case SURF_REFL:
-												var reflection = view.getInt16(subchunkOffset) / 255;
+												var reflection = view.getInt16(subchunkOffset+SUBCHUNK_HEADER_SIZE) / 255;
+												material.reflectivity = reflection;
 												break;
 											case SURF_TRAN:
-												var transparency = view.getInt16(subchunkOffset) / 255;
+												var transparency = view.getInt16(subchunkOffset+SUBCHUNK_HEADER_SIZE) / 255;
+												material.opacity = 1 - transparency;
+												if (transparency > 0) material.transparent = true;
 												break;
 
 											case SURF_VLUM:
-												var luminosity = view.getFloat32(subchunkOffset);
+												var luminosity = view.getFloat32(subchunkOffset+SUBCHUNK_HEADER_SIZE);
 												break;
 											case SURF_VDIF:
-												var diffuse = view.getFloat32(subchunkOffset);
+												var diffuse = view.getFloat32(subchunkOffset+SUBCHUNK_HEADER_SIZE);
 												break;
 											case SURF_VSPC:
-												var specular = view.getFloat32(subchunkOffset);
+												var specular = view.getFloat32(subchunkOffset+SUBCHUNK_HEADER_SIZE);
+												material.specular = material.color.multiplyScalar(specular);
 												break;
 											case SURF_VRFL:
-												var reflection = view.getFloat32(subchunkOffset);
+												var reflection = view.getFloat32(subchunkOffset+SUBCHUNK_HEADER_SIZE);
+												material.reflectivity = reflection;
 												break;
 											case SURF_VTRN:
-												var transparency = view.getFloat32(subchunkOffset);
+												var transparency = view.getFloat32(subchunkOffset+SUBCHUNK_HEADER_SIZE);
+												material.opacity = 1 - transparency;
+												if (transparency > 0) material.transparent = true;
 												break;
 
 											case SURF_GLOS:
@@ -509,29 +511,10 @@
 
 												// instantiate a loader
 												var loader = new THREE.TextureLoader();
-												material.map = loader.load( "LegoRR0/World/Shared/" + textureName );
+												var texture = loader.load( "LegoRR0/World/Shared/" + textureName );
+												material.map = texture;
 												material.map.wrapS = THREE.RepeatWrapping;
 												material.map.wrapT = THREE.RepeatWrapping;
-												//material.map.repeat.set( 4, 4 );
-												var scope = this;
-
-												// load a resource
-												/*
-												loader.load(
-													"LegoRR0/World/Shared/" + textureName,
-													function ( texture ) {
-														scope.materials[materialIndex].map = texture;
-													},
-													// Function called when download progresses
-													function ( xhr ) {
-														console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
-													},
-													// Function called when download errors
-													function ( xhr ) {
-														console.log( 'An error happened' );
-													}
-												);
-												*/
 
 												break;
 											default:
@@ -543,7 +526,6 @@
 								}
 
 								planarMapUVS(this.geometry, this.vertices, this.uvs, this.indices, materialIndex, textureSize, textureCenter, textureFlags);
-								console.log(this.uvs)
 								break;
 							default:
 							console.warn('Found unrecognised chunk type ' + new TextDecoder().decode(new Uint8Array(buffer, cursor-CHUNK_HEADER_SIZE, ID4_SIZE)) + ' at ' + cursor);
@@ -557,6 +539,7 @@
 				this.geometry.addAttribute( 'position', new THREE.BufferAttribute( this.vertices, 3 ) );
 				this.geometry.addAttribute( 'uv', new THREE.BufferAttribute( this.uvs, 2 ) );
 				this.geometry.setIndex( new THREE.BufferAttribute( this.indices, 1 ) );
+				this.geometry.computeVertexNormals();
 
 				return new THREE.Mesh(this.geometry, new THREE.MultiMaterial( this.materials ));
 			}
