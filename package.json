@@ -4,7 +4,8 @@
   "description": "A LWO loader for THREE.js to support Lego Rock Raider's native model format.",
   "main": "./dist/LWOLoader.js",
   "scripts": {
-    "build": "webpack"
+    "build": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack --progress --watch & ./node_modules/.bin/serve --port 3000"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/marcbizal/LWOLoader#readme",
   "devDependencies": {
+    "serve": "^2.4.1",
     "webpack": "^2.2.0-rc.5"
   }
 }

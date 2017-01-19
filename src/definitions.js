@@ -1,8 +1,6 @@
-
+(function() {
 // HEADER SPEC //
-
-const LWO_MAGIC = 0x4C574F32; // "LWO2"
-const LWO_MAGIC_LRR = 0x4C574F42; // "LWOB" - this is unique to LRR files.
+const LWO_MAGIC = 0x4C574F42; // "LWOB"
 const OFF_MAGIC = 8;
 
 /********************/
@@ -12,6 +10,7 @@ const OFF_MAGIC = 8;
 const ID4_SIZE 		= 4;
 const I1_SIZE 		= 1;
 const I2_SIZE 		= 2;
+const I4_SIZE 		= 4;
 const F4_SIZE 		= 4;
 
 const COL4_SIZE 	= 4;
@@ -164,3 +163,4 @@ const ANTIALIASING_BIT		= 64;
 /*************************/
 /*  TFLG DEFINITION END  */
 /*************************/
+})();

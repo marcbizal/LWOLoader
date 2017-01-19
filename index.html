@@ -3,8 +3,8 @@
 <head>
 	<title>LWOLoader for THREE.js</title>
 
-	<script type="text/javascript" src="three.js"></script>
-	<script type="text/javascript" src="LWOLoader.js"></script>
+	<script type="text/javascript" src="vendor/three.js"></script>
+	<script type="text/javascript" src="dist/LWOLoader.js"></script>
 
 	<style>
 		html, body { margin: 0; padding: 0; overflow: hidden; }
@@ -19,6 +19,7 @@
 
 		var renderer = new THREE.WebGLRenderer();
 			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.sortObjects = true;
 		
 		document.body.appendChild( renderer.domElement );
 
@@ -31,7 +32,7 @@
 		light.position.set( 20, 20, 20 );
 		scene.add( light );
 
-		camera.position.z = 50;
+		camera.position.z = 70;
 
 		var render = function () {
 			requestAnimationFrame( render );
@@ -44,7 +45,7 @@
 
 		var loader = new THREE.LWOLoader();
 
-		loader.load("/LegoRR0/Buildings/Teleports/Mobile-teleport.lwo", function(lwo_) {
+		loader.load("/LegoRR0/Buildings/Toolstation/Mobile-teleport.lwo", function(lwo_) {
 
 			lwo = new THREE.Group();
 			lwo.add(lwo_);

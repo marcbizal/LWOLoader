@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>Bitmap Loader Test</title>
-	<script type="text/javascript" src="three.js"></script>
-	<script type="text/javascript" src="BitmapLoader.js"></script>
+	<script type="text/javascript" src="vendor/three.js"></script>
+	<script type="text/javascript" src="dist/BitmapLoader.js"></script>
 
 	<style>
 		html, body { margin: 0; padding: 0; overflow: hidden; }
@@ -27,7 +27,7 @@
 	var loader = new THREE.BitmapLoader();
 	var cube = null;
 
-	loader.load("LegoRR0/Buildings/Powerstation/A000_OreSide.bmp", function(texture) {
+	loader.load("LegoRR0/World/Shared/A000_piping.bmp", function(texture) {
 		texture.blending = THREE.NoBlending;
 		var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 		var material = new THREE.MeshBasicMaterial( { map: texture, transparent: true } );

@@ -7,11 +7,22 @@
  *  - 
  */
 
+ function fixPath(path) {
+ 	return path.replace(/\//g, "\\"); // convert forward slashes to backslashes.
+ }
+
+ function getFilename( path ) {
+	return path.substring(path.lastIndexOf('\\')+1);
+}
+
+
 ( function() {
 
 		THREE.BitmapLoader = function( manager ) {
 
 			this.manager = ( manager !== undefined ) ? manager : THREE.DefaultLoadingManager;
+
+			this.path = "";
 
 		};
 
@@ -21,13 +32,14 @@
 
 			constructor: THREE.LWO2Loader,
 
-			load: function( url, onLoad, onProgress, onError ) {
+			load: function( path, onLoad, onProgress, onError ) {
+				this.path = fixPath(path);
 
 				var scope = this;
 
 				var loader = new THREE.FileLoader( scope.manager );
 					loader.setResponseType( 'arraybuffer' );
-					loader.load( url, function( buffer ) {
+					loader.load( path, function( buffer ) {
 
 						onLoad( scope.parse( buffer ) );
 
@@ -87,12 +99,22 @@
 					{ name: "biClrImportant", 	size: 4 },
 				];
 
+
 				var fileHeader = this.parseHeader(view, cursor, BMP_FILEHEADER);
 				cursor += BMP_FILEHEADER_SIZE;
 				
 				if (fileHeader.bfType !== BM_MAGIC) {
-					console.error("THREE.BitMapLoader.parse: File is not a BMP!")
-					return;
+					console.warn("THREE.BitMapLoader.parse: File is not supported; Falling back...");
+					let fallback = new THREE.TextureLoader();
+
+					return fallback.load(this.path);
+				}
+
+				if ( getFilename( this.path )[0] !== 'A' ) {
+					console.warn("THREE.BitMapLoader.parse: BitMap has no alpha; Falling back...");
+					let fallback = new THREE.TextureLoader();
+
+					return fallback.load(this.path);
 				}
 
 				var imageHeader = this.parseHeader(view, cursor, BMP_IMAGEHEADER);
@@ -120,6 +142,8 @@
 				cursor += imageHeader.biClrUsed * 4;
 
 				var imageData = new Uint8Array(imageHeader.biHeight*imageHeader.biWidth*4);
+				var key = getFilename( this.path ).substring(1, 4);
+				console.log(key);
 
 				let pixelOffset = 0;
 				for (let y = 0; y < imageHeader.biHeight; y++) {
@@ -127,10 +151,10 @@
 						pixelOffset = (y * imageHeader.biWidth)-1 + x;
 
 						var index = view.getUint8(cursor+pixelOffset);
-						if (index == 0) {
+
+						if (index == key) {
 							imageData[(pixelOffset*4) + 3] = 0;
 						} else {
-							var colorOffset = colorTable[index];
 
 							imageData[pixelOffset*4] 		= colorTable[index*3];
 							imageData[(pixelOffset*4) + 1] 	= colorTable[(index*3) + 1];
@@ -140,7 +164,7 @@
 					}
 				}
 
-				var texture = new THREE.DataTexture(imageData, imageHeader.biHeight, imageHeader.biWidth, THREE.RGBAFormat, THREE.UnsignedByteType, THREE.UVMapping);
+				var texture = new THREE.DataTexture(imageData, imageHeader.biWidth, imageHeader.biHeight, THREE.RGBAFormat, THREE.UnsignedByteType, THREE.UVMapping);
 					texture.needsUpdate = true;
 
 				console.timeEnd('BMP Parse');
